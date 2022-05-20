@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #777;
+}
+
+.contenar {
+    background-color: aliceblue;
+    width: 600px;
+    height: 335px;
+    border-radius: 3%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+.cont1 {
+    margin-bottom: 27px;
+    background-color: #562a27;
+    height: 50px;
+    border-radius:6px ;
+    -webkit-border-radius:6px ;
+    -moz-border-radius:6px ;
+    -ms-border-radius:6px ;
+    -o-border-radius:6px ;
+    position: relative;
+    padding: 5px;
+}
+span {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.h {
+    background-color: #00ff00;
+    width: 0%;
+    height: calc(100% - 15px);
+    /*z-index: 5;
+    */position: absolute;
+    top: 6px;
+    padding: -7px;
+    animation: rewidthH ease 3s 2s both;
+    -webkit-animation: rewidthH ease 3s 2s both;
+}
+@keyframes rewidthH {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 88%;
+    }
+}
+/* Start animation aftar html */
+.h::after {
+    font-weight: bold;
+    content: 'HTML5';
+    color: #25cd16;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    position: absolute;
+    bottom: 45px;
+    /*left: 94%;
+    */left: -10px;
+    background-color: #2d342b;
+    padding: 3px 14px 3px 14px;
+    border-radius: 3px 14px 3px 14px;
+    animation: movaphtml ease 3s 2s both;
+    -webkit-animation: movaphtml ease 3s 2s both;
+    -webkit-border-radius: 3px 14px 3px 14px;
+    -moz-border-radius: 3px 14px 3px 14px;
+    -ms-border-radius: 3px 14px 3px 14px;
+    -o-border-radius: 3px 14px 3px 14px;
+}
+@keyframes movaphtml {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 93%;
+    }
+}
+/* sahmm */
+.h::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 42px;
+    /*left: 98%;*/
+    /* left: 7%; */
+    transform: rotate(45deg);
+    animation: movdawin ease 3s 2s both;
+    -webkit-animation: movdawin ease 3s 2s both;
+}
+@keyframes movdawin {
+    0% {
+        left: 10%;
+        display: none;
+    }
+
+    100% {
+        left: 99%;
+        background-color: red;
+    }
+}
+/* End animation aftar html */
+.c {
+    background-color: #00ff00;
+    width: 0%;
+    height: calc(100% - 15px);
+    /*z-index: 5;
+    */position: absolute;
+    top: 6px;
+    padding: -7px;
+    animation: rewidthC ease 3s 2s both;
+    -webkit-animation: rewidthC ease 3s 2s both;
+}
+@keyframes rewidthC {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+/* Start animation aftar css */
+.c::after {
+    font-weight: bold;
+    content: 'Css';
+    color: #25cd16;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    position: absolute;
+    bottom: 45px;
+    /*left: 94%;
+    */left: -10px;
+    background-color: #2d342b;
+    padding: 3px 14px 3px 14px;
+    border-radius: 3px 14px 3px 14px;
+    animation: movapcss ease 3s 2s both;
+    -webkit-animation: movapcss ease 3s 2s both;
+    -webkit-border-radius: 3px 14px 3px 14px;
+    -moz-border-radius: 3px 14px 3px 14px;
+    -ms-border-radius: 3px 14px 3px 14px;
+    -o-border-radius: 3px 14px 3px 14px;
+}
+
+@keyframes movapcss {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 95%;
+    }
+}
+
+/* sahmm */
+.c::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 42px;
+    /*left: 98%;
+    *//*left: 7%;
+    */transform: rotate(45deg);
+    animation: movdawincss ease 3s 2s both;
+    -webkit-animation: movdawincss ease 3s 2s both;
+}
+
+@keyframes movdawincss {
+    0% {
+        left: 10%;
+        display: none;
+    }
+
+    100% {
+        left: 98.9%;
+        background-color: red;
+    }
+}
+
+/* End animation aftar css */
+.j {
+    background-color: #00ff00;
+    width: 0%;
+    height: calc(100% - 15px);
+    /*z-index: 5;
+    */position: absolute;
+    top: 6px;
+    padding: -7px;
+    animation: rewidthJ ease 3s 2s both;
+    -webkit-animation: rewidthJ ease 3s 2s both;
+}
+@keyframes rewidthJ {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+/* Start animation aftar js */
+.j::after {
+    font-weight: bold;
+    content: 'JavaScript';
+    color: #25cd16;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    position: absolute;
+    bottom: 45px;
+    /*left: 94%;
+    */left: -10px;
+    background-color: #2d342b;
+    padding: 3px 14px 3px 14px;
+    border-radius: 3px 14px 3px 14px;
+    animation: movapjs ease 3s 2s both;
+    -webkit-animation: movapjs ease 3s 2s both;
+    -webkit-border-radius: 3px 14px 3px 14px;
+    -moz-border-radius: 3px 14px 3px 14px;
+    -ms-border-radius: 3px 14px 3px 14px;
+    -o-border-radius: 3px 14px 3px 14px;
+}
+
+@keyframes movapjs {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 88%;
+    }
+}
+
+/* sahmm */
+.j::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 42px;
+    /*left: 98%;
+    *//*left: 7%;
+    */transform: rotate(45deg);
+    animation: movdawjs ease 3s 2s both;
+    -webkit-animation: movdawjs ease 3s 2s both;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+@keyframes movdawjs {
+    0% {
+        left: 10%;
+        display: none;
+    }
+
+    100% {
+        left: 98.9%;
+        background-color: red;
+    }
+}
+
+/* End animation aftar js */
+.r {
+    background-color: #00ff00;
+    width: 0%;
+    height: calc(100% - 15px);
+    /*z-index: 5;
+    */position: absolute;
+    top: 6px;
+    padding: -7px;
+    animation: rewidthR ease 3s 2s both;
+    -webkit-animation: rewidthR ease 3s 2s both;
+}
+@keyframes rewidthR {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+/* Start animation aftar react */
+.r::after {
+    font-weight: bold;
+    content: 'React';
+    color: #25cd16;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    position: absolute;
+    bottom: 45px;
+    /*left: 94%;
+    */
+    left: -10px;
+    background-color: #2d342b;
+    padding: 3px 14px 3px 14px;
+    border-radius: 3px 14px 3px 14px;
+    animation: movap ease 3s 2s both;
+    -webkit-animation: movap ease 3s 2s both;
+    -webkit-border-radius: 3px 14px 3px 14px;
+    -moz-border-radius: 3px 14px 3px 14px;
+    -ms-border-radius: 3px 14px 3px 14px;
+    -o-border-radius: 3px 14px 3px 14px;
+}
+
+@keyframes movap {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 85%;
+    }
+}
+
+/* sahmm */
+.r::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 42px;
+    /*left: 98%;
+    *//*left: 7%;
+    */transform: rotate(45deg);
+    animation: movdawrea ease 3s 2s both;
+    -webkit-animation: movdawrea ease 3s 2s both;
+}
+
+@keyframes movdawrea {
+    0% {
+        left: 10%;
+        display: none;
+    }
+
+    100% {
+        left: 97%;
+        background-color: red;
+    }
+}
+
+/* End animation aftar react */
